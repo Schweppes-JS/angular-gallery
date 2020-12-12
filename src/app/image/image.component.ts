@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Service } from '../services';
 
 @Component({
   selector: 'app-image',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image.component.css']
 })
 export class ImageComponent implements OnInit {
+
   title = 'Image';
-  constructor() { }
+
+  link: string;
+
+  constructor(private data: Service) { }
 
   ngOnInit(): void {
+    this.data.currentLink.subscribe(link => this.link = link);
   }
 
 }

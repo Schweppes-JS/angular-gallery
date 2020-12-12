@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ElementRef, AfterViewInit, ViewChild, AfterContentChecked } from '@angular/core';
 import { Images } from '../data';
+import { Service } from '../../services';
 
 @Component({
   selector: 'app-plate',
@@ -17,7 +18,7 @@ export class PlateComponent implements AfterViewInit, OnInit {
   private width: number;
   private height: number;
 
-  constructor() { }
+  constructor(private data: Service) { }
 
   ngAfterViewInit(): void {
     setTimeout(() => {
@@ -36,13 +37,13 @@ export class PlateComponent implements AfterViewInit, OnInit {
   ngOnInit(): void {
   }
 
-  hideLoader = () => {
+  hideLoader(): void {
     this.isLoad = true;
   }
 
-  // ngAfterContentChecked(): void {
-  //   console.log(this.height, width)
-  // }
+  sendingLink = (link: string) => {
+    this.data.changingLink(link);
+  }
   
   @ViewChild('img')
   public img: ElementRef;

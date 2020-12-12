@@ -31,4 +31,5 @@
     height: 150px;
     border: 1px solid black;
     overflow: hidden;
+    cursor: pointer;
 }
