@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from './data';
+import { data, Images } from './data';
 
 @Component({
   selector: 'app-gallery',
@@ -8,12 +8,11 @@ import { data } from './data';
 })
 export class GalleryComponent implements OnInit {
   public title = 'Gallery';
-  public images: [] = data;
+  public images: Images = data;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.images);
   }
 
 }

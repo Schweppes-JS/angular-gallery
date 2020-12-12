@@ -1,7 +1,7 @@
-interface Images {
+export interface Images {
     [index: number]: {
         id: string,
-        description: null,
+        description: null | string,
         urls: {
             raw: string,
             full: string,
