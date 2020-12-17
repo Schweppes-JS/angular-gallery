@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/user/Desktop/framework-portfolio/angular-gallery/gallery/src/main.ts */"zUnb");
+module.exports = __webpack_require__(/*! /home/user/Desktop/framework-portfolio/angular-gallery/src/main.ts */"zUnb");
 
 
 /***/ }),
@@ -267,7 +267,7 @@ class PlateComponent {
                 this.isLandscape = false;
                 this.isPortrait = true;
             }
-        }, 0);
+        }, 100);
     }
     hideLoader() {
         this.isLoad = true;

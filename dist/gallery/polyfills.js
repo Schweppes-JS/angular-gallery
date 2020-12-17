@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/user/Desktop/framework-portfolio/angular-gallery/gallery/src/polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! /home/user/Desktop/framework-portfolio/angular-gallery/src/polyfills.ts */"hN/g");
 
 
 /***/ }),

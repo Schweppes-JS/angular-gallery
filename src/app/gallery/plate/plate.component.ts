@@ -32,7 +32,7 @@ export class PlateComponent implements AfterViewInit {
         this.isLandscape = false;
         this.isPortrait = true;
       }
-    }, 0);
+    }, 100);
   }
 
   hideLoader(): void {
@@ -42,7 +42,7 @@ export class PlateComponent implements AfterViewInit {
   sendingLink() {
     this.service.changingLink(this.index);
   }
-  
+
   @ViewChild('img')
   public img: ElementRef;
 
